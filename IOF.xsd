@@ -19,11 +19,11 @@
     <xsd:documentation>
       This XML schema describes the IOF interface standard exchange format for a wide selection of orienteering information. The schema supersedes the previous version 2.0.3.
 
-      Website: http://www.orienteering.org/datastandard/3.0
+      Website: https://orienteering.sport/iof/resources/it/data-standard-3-0/
       Author:  Mats Troeng
       Date:    December 2012
 
-      For a formal description of XML Schema datatypes, visit http://www.w3.org/TR/xmlschema-2/.
+      For a formal description of XML Schema datatypes, visit https://www.w3.org/TR/xmlschema-2/.
     </xsd:documentation>
   </xsd:annotation>
 
@@ -3393,7 +3393,7 @@
         <xsd:attribute name="mediaType" type="xsd:string" use="required">
           <xsd:annotation>
             <xsd:documentation>
-              The type of the image file, e.g. image/jpeg. Refer to http://en.wikipedia.org/wiki/Internet_media_type#Type_image for available media types.
+              The type of the image file, e.g. image/jpeg. Refer to https://www.iana.org/assignments/media-types/media-types.xhtml#image for available media types.
             </xsd:documentation>
           </xsd:annotation>
         </xsd:attribute>
@@ -3964,7 +3964,7 @@
     <xsd:attribute name="specialInstruction" use="optional" default="None">
       <xsd:annotation>
         <xsd:documentation>
-          Any special instruction applied at the control, see http://orienteering.org/wp-content/uploads/2010/12/Control-Descriptions-2004-symbols-only.pdf, page 15.
+          Any special instruction applied at the control, see the column G as defined in International Specification for Control Descriptions.
         </xsd:documentation>
       </xsd:annotation>
       <xsd:simpleType>
@@ -4221,7 +4221,7 @@
         <xsd:attribute name="code" type="xsd:string" use="required">
           <xsd:annotation>
             <xsd:documentation>
-              The International Olympic Committee's 3-letter code of the country as stated in http://en.wikipedia.org/wiki/List_of_IOC_country_codes. Note that several of the IOC codes are different from the standard ISO 3166-1 alpha-3 codes.
+              The International Olympic Committee's 3-letter code of the country as stated in https://en.wikipedia.org/wiki/List_of_IOC_country_codes. Note that several of the IOC codes are different from the standard ISO 3166-1 alpha-3 codes.
             </xsd:documentation>
           </xsd:annotation>
         </xsd:attribute>
@@ -4289,7 +4289,7 @@
         <xsd:attribute name="language" type="xsd:string" use="optional">
           <xsd:annotation>
             <xsd:documentation>
-              The ISO 639-1 two-letter code of the language as stated in http://www.loc.gov/standards/iso639-2/php/code_list.php.
+              The ISO 639-1 two-letter code of the language as stated in https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes.
             </xsd:documentation>
           </xsd:annotation>
         </xsd:attribute>
