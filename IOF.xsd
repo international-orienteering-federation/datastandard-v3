@@ -3194,7 +3194,7 @@
         - otherwise, full storage mode is used
         The position of the first waypoint of a route is always stored in full storage mode.
 
-        Code libraries for reading and writing route data is found in http://code.google.com/p/iofdatastandard/source/browse/trunk/Libraries.
+        Code libraries for reading and writing route data is found in https://github.com/international-orienteering-federation/datastandard-v3/blob/master/libraries.
       </xsd:documentation>
     </xsd:annotation>
     <xsd:simpleContent>
