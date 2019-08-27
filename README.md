@@ -19,16 +19,18 @@ This leads to the conclusion that there is a need for a simple means to enable a
 ## History
 The efforts to define an interface standard for orienteering started in October 1998 at an IOF Technical Development Committee meeting in Oslo, Norway. The first public version was published in January 2001, but soon proved to be inadequate. The 2.0.3 version was published in April 2002, and has been the current interface standard for more than ten years.
 
-Information about previous versions of the IOF Interface Standard can be found [here](https://github.com/international-orienteering-federation/).
+Information about previous versions of the IOF Interface Standard can be found here:
+* [IOF Data Standard, versions 0 and 1
+](https://github.com/international-orienteering-federation/datastandard-v1)
+* [IOF Data Standard, version 2.0.3
+](https://github.com/international-orienteering-federation/datastandard-v2)
 
 ## IOF Interface Standard 3.0
 The information technology business evolves rapidly, and ten years is a long time in this perspective. New standards, tools and platforms become available, and usage patterns change.
 
 Also, the sport of orienteering evolves. New event formats and inventions like geographical tracking of competitors are not supported by the 2.0.3 version. The need for a new version of the interface standard was identified in 2010. Two years later, in the end of 2012, the new version was declared official.
 
-The formal specification of the new interface standard can be found here.
-
-##XML Schema
+## XML Schema
 The specification of the new version is expressed as an [XML Schema](https://www.w3.org/XML/Schema.html), in contrast to the DTD (Document Type Definition) used previously. Defining information structure using an XML Schema is more powerful than using a DTD. Benefits include:
 
 * Support for data types
