@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EventList xmlns="http://www.orienteering.org/datastandard/3.0"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           iofVersion="3.0" 
+           createTime="2011-07-20T12:16:31+02:00" 
+           creator="Example Software">
+  <Event>
+    <Name>Example event</Name>
+    <StartTime>
+      <Date>2011-07-31</Date>
+      <Time>10:00:00+02:00</Time>
+    </StartTime>
+  </Event>
+</EventList>

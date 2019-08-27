@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Result list for an individual multi-race event containing two races.
+-->
+<ResultList xmlns="http://www.orienteering.org/datastandard/3.0"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            iofVersion="3.0"
+            createTime="2011-07-31T22:46:33+01:00"
+            creator="Example Software"
+            status="Complete">
+  <Event>
+    <Name>Example event</Name>
+    <StartTime>
+      <Date>2011-07-30</Date>
+      <Time>10:00:00+01:00</Time>
+    </StartTime>
+    <EndTime>
+      <Date>2011-07-31</Date>
+      <Time>14:00:00+01:00</Time>
+    </EndTime>
+    <!-- one Race element for each race -->
+    <Race>
+      <!-- the race number appears as an attribute in some elements in the document, e.g. Course, StartName and Start -->
+      <RaceNumber>1</RaceNumber>
+      <Name>Race 1</Name>
+      <StartTime>
+        <Date>2011-07-30</Date>
+        <Time>10:00:00+01:00</Time>
+      </StartTime>
+      <EndTime>
+        <Date>2011-07-30</Date>
+        <Time>14:00:00+01:00</Time>
+      </EndTime>
+    </Race>
+    <Race>
+      <RaceNumber>2</RaceNumber>
+      <Name>Race 2</Name>
+      <StartTime>
+        <Date>2011-07-31</Date>
+        <Time>10:00:00+01:00</Time>
+      </StartTime>
+      <EndTime>
+        <Date>2011-07-01</Date>
+        <Time>14:00:00+01:00</Time>
+      </EndTime>
+    </Race>
+  </Event>
+  <ClassResult>
+    <Class>
+      <Id>1</Id>
+      <Name>Men Elite</Name>
+    </Class>
+    <!-- one course per race, use the raceNumber attribute to specify the race -->
+    <!-- if there are multiple courses per class, a Course element may be included to express the properties of an average pseudo course -->
+    <Course raceNumber="1">
+      <!-- course length is expressed in meters -->
+      <Length>4650</Length>
+      <!-- course climb is expressed in meters; omit the Climb element if the course climb is not known -->
+      <Climb>160</Climb>
+    </Course>
+    <Course raceNumber="2">
+      <Length>8600</Length>
+      <Climb>280</Climb>
+    </Course>
+    <PersonResult>
+      <Person>
+        <Id>1</Id>
+        <Name>
+          <Family>Wood</Family>
+          <Given>George</Given>
+        </Name>
+      </Person>
+      <!-- the Organisation element is to be omitted if the competitor does not represent a club -->
+      <Organisation>
+        <Id>5</Id>
+        <Name>OC Back and Forth</Name>
+        <Country code="GBR">Great Britain</Country>
+      </Organisation>
+      <!-- one Result element per race, use the raceNumber attribute to specify the race -->
+      <Result raceNumber="1">
+        <BibNumber>101</BibNumber>
+        <!-- start and finish times are expressed in ISO 8601 format, optionally including time zone information: YYYY-MM-DDThh:mm:ss[.s[s[s]]][((+|-)hh:mm)|Z] -->
+        <!-- for a detailed specification, see http://www.w3.org/TR/xmlschema-2/#dateTime -->
+        <StartTime>2011-07-30T10:00:00+01:00</StartTime>
+        <FinishTime>2011-07-30T10:33:21+01:00</FinishTime>
+        <!-- times are expressed in seconds, use period as decimal separator for fractions of seconds -->
+        <Time>2001</Time>
+        <!-- time behind the winner -->
+        <TimeBehind>0</TimeBehind>
+        <!-- the position in the result list -->
+        <Position>1</Position>
+        <!-- the result status, see the xml schema file for all status codes -->
+        <Status>OK</Status>
+        <!-- the overall result after the first race (which obviously is the same as the race result -->
+        <OverallResult>
+          <Time>2001</Time>
+          <TimeBehind>0</TimeBehind>
+          <Position>1</Position>
+          <Status>OK</Status>
+        </OverallResult>
+        <!-- split times may be omitted, but if they are present all controls of the course that is assigned to the competitor must be included in the correct order, even if they have not been visited -->
+        <!-- start and finish punches must not be included; use StartTime and FinishTime of the Result element instead -->
+        <SplitTime>
+          <ControlCode>31</ControlCode>
+          <!-- if the control has been visited but the time is not known (e.g. due to a failing punching unit), omit the Time element -->
+          <Time>501</Time>
+        </SplitTime>
+        <SplitTime>
+          <ControlCode>32</ControlCode>
+          <Time>720</Time>
+        </SplitTime>
+        <SplitTime>
+          <ControlCode>31</ControlCode>
+          <Time>818</Time>
+        </SplitTime>
+        <SplitTime>
+          <ControlCode>33</ControlCode>
+          <Time>1136</Time>
+        </SplitTime>
+        <SplitTime>
+          <ControlCode>31</ControlCode>
+          <Time>1593</Time>
+        </SplitTime>
+        <ControlCard>794021</ControlCard>
+      </Result>
+      <Result raceNumber="2">
+        <BibNumber>2</BibNumber>
+        <StartTime>2011-07-31T10:03:00+01:00</StartTime>
+        <FinishTime>2011-07-31T10:53:00+01:00</FinishTime>
+        <Time>3000</Time>
+        <TimeBehind>0</TimeBehind>
+        <Position>1</Position>
+        <Status>OK</Status>
+        <OverallResult>
+          <Time>5001</Time>
+          <TimeBehind>0</TimeBehind>
+          <Position>1</Position>
+          <Status>OK</Status>
+        </OverallResult>
+        <SplitTime>
+          <ControlCode>31</ControlCode>
+          <Time>630</Time>
+        </SplitTime>
+        <SplitTime>
+          <ControlCode>32</ControlCode>
+          <Time>891</Time>
+        </SplitTime>
+        <SplitTime>
+          <ControlCode>33</ControlCode>
+          <Time>2501</Time>
+        </SplitTime>
+        <SplitTime>
+          <ControlCode>34</ControlCode>
+          <Time>3688</Time>
+        </SplitTime>
+        <SplitTime>
+          <ControlCode>35</ControlCode>
+          <Time>4730</Time>
+        </SplitTime>
+        <ControlCard>794021</ControlCard>
+      </Result>
+    </PersonResult>
+    <!-- example of a competitor that has mispunched at the first race and not starting at the second race -->
+    <PersonResult>
+      <Person>
+        <Id>2</Id>
+        <Name>
+          <Family>Martin</Family>
+          <Given>Edgar</Given>
+        </Name>
+      </Person>
+      <Organisation>
+        <Id>2</Id>
+        <Name>Bushmen OC</Name>
+        <Country code="GBR">Great Britain</Country>
+      </Organisation>
+      <Result raceNumber="1">
+        <BibNumber>102</BibNumber>
+        <StartTime>2011-07-30T10:03:00+01:00</StartTime>
+        <!-- the finish time is included even if the competitor has not completed his course -->
+        <FinishTime>2011-07-30T10:39:42+01:00</FinishTime>
+        <!-- the time is included even if the competitor has not completed his course -->
+        <Time>2202</Time>
+        <Status>MissingPunch</Status>
+        <SplitTime>
+          <ControlCode>31</ControlCode>
+          <Time>693</Time>
+        </SplitTime>
+        <SplitTime>
+          <ControlCode>33</ControlCode>
+          <Time>1581</Time>
+        </SplitTime>
+        <SplitTime>
+          <ControlCode>31</ControlCode>
+          <Time>1920</Time>
+        </SplitTime>
+        <!-- controls that have not been visited (or - as in this case - punched but not in the correct order) must still be included, but with the status attribute set to Missing -->
+        <SplitTime status="Missing">
+          <ControlCode>32</ControlCode>
+        </SplitTime>
+        <SplitTime status="Missing">
+          <ControlCode>31</ControlCode>
+        </SplitTime>
+        <!-- additional punches that do not belong to the course or are not in the correct order may be expressed using the Additional status -->
+        <SplitTime status="Additional">
+          <ControlCode>32</ControlCode>
+          <Time>966</Time>
+        </SplitTime>
+        <SplitTime status="Additional">
+          <ControlCode>31</ControlCode>
+          <Time>1379</Time>
+        </SplitTime>
+        <ControlCard>299482</ControlCard>
+      </Result>
+      <Result raceNumber="2">
+        <BibNumber>1</BibNumber>
+        <StartTime>2011-07-31T10:00:00+01:00</StartTime>
+        <Status>DidNotStart</Status>
+        <OverallResult>
+          <!-- MissingPunch at the first race and DidNotStart at the second race makes a DidNotFinish overall -->
+          <Status>DidNotFinish</Status>
+        </OverallResult>
+        <ControlCard>299482</ControlCard>
+      </Result>
+    </PersonResult>
+  </ClassResult>
+</ResultList>

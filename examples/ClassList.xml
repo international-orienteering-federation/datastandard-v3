@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  Class information for a relay event.
+-->
+<ClassList xmlns="http://www.orienteering.org/datastandard/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" iofVersion="3.0" createTime="2011-07-20T12:16:31+01:00" creator="Example Software">
+  <!-- there are 35 teams taking part in this class -->
+  <Class numberOfCompetitors="35">
+    <Id>1</Id>
+    <Name>Men Open</Name>
+    <!-- this class has three legs, each one represented by a Leg element -->
+    <!-- the first leg is run by one competitor, which means that no minNumberOfCompetitors or maxNumberOfCompetitors are present since they default to 1 -->
+    <Leg/>
+    <!-- the second leg is run by one to three competitors in parallel -->
+    <Leg maxNumberOfCompetitors="3"/>
+    <!-- the third leg is run by one competitor -->
+    <Leg/>
+  </Class>
+  <Class numberOfCompetitors="38">
+    <Id>2</Id>
+    <Name>Women Open</Name>
+    <Leg/>
+    <Leg maxNumberOfCompetitors="3"/>
+    <Leg/>
+  </Class>
+</ClassList>

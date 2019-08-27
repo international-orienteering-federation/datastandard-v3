@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  Class information for an individual event.
+-->
+<ClassList xmlns="http://www.orienteering.org/datastandard/3.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" iofVersion="3.0" createTime="2011-07-20T12:16:31+01:00" creator="Example Software">
+  <!-- two classes present, each having 60 competitors entered -->
+  <Class numberOfCompetitors="60">
+    <Name>Men Open</Name>
+  </Class>
+  <Class numberOfCompetitors="60">
+    <Name>Women Open</Name>
+  </Class>
+</ClassList>

@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Start list for an individual multi-race event containing two races.
+-->
+<StartList xmlns="http://www.orienteering.org/datastandard/3.0"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           iofVersion="3.0"
+           createTime="2011-07-20T12:16:31+02:00"
+           creator="Example Software">
+  <Event>
+    <Name>Example event</Name>
+    <StartTime>
+      <Date>2011-07-30</Date>
+      <Time>10:00:00+01:00</Time>
+    </StartTime>
+    <EndTime>
+      <Date>2011-07-31</Date>
+      <Time>14:00:00+01:00</Time>
+    </EndTime>
+    <!-- one Race element for each race -->
+    <Race>
+      <!-- the race number appears as an attribute in some elements in the document, e.g. Course, StartName and Start -->
+      <RaceNumber>1</RaceNumber>
+      <Name>Race 1</Name>
+      <StartTime>
+        <Date>2011-07-30</Date>
+        <Time>10:00:00+01:00</Time>
+      </StartTime>
+      <EndTime>
+        <Date>2011-07-30</Date>
+        <Time>14:00:00+01:00</Time>
+      </EndTime>
+    </Race>
+    <Race>
+      <RaceNumber>2</RaceNumber>
+      <Name>Race 2</Name>
+      <StartTime>
+        <Date>2011-07-31</Date>
+        <Time>10:00:00+01:00</Time>
+      </StartTime>
+      <EndTime>
+        <Date>2011-07-01</Date>
+        <Time>14:00:00+01:00</Time>
+      </EndTime>
+    </Race>
+  </Event>
+  <ClassStart>
+    <Class>
+      <Id>1</Id>
+      <Name>Men Elite</Name>
+    </Class>
+    <!-- one course per race, use the raceNumber attribute to specify the race -->
+    <!-- if there are multiple courses per class, a Course element may be included to express the properties of an average pseudo course -->
+    <Course raceNumber="1">
+      <!-- course length is expressed in meters -->
+      <Length>4650</Length>
+      <!-- course climb is expressed in meters; omit the Climb element if the course climb is not known -->
+      <Climb>160</Climb>
+    </Course>
+    <Course raceNumber="2">
+      <Length>8600</Length>
+      <Climb>280</Climb>
+    </Course>
+    <!-- one start name per race, use the raceNumber attribute to specify the race -->
+    <StartName raceNumber="1">Start 1</StartName>
+    <StartName raceNumber="2">Start 1</StartName>
+    <PersonStart>
+      <!-- the EntryId element can be used as an unique identifier of the entry when exchanging data with the entry system -->
+      <EntryId>1234</EntryId>
+      <Person>
+        <Id>1</Id>
+        <Name>
+          <Family>Wood</Family>
+          <Given>George</Given>
+        </Name>
+      </Person>
+      <!-- the Organisation element is to be omitted if the competitor does not represent a club -->
+      <Organisation>
+        <Id>5</Id>
+        <Name>OC Back and Forth</Name>
+        <Country code="GBR">Great Britain</Country>
+      </Organisation>
+      <!-- one Start element per race, use the raceNumber attribute to specify the race -->
+      <Start raceNumber="1">
+        <!-- omit the BibNumber element if the competitor does not wear a number bib -->
+        <BibNumber>101</BibNumber>
+        <!-- start times are expressed in ISO 8601 format, optionally including time zone information: YYYY-MM-DDThh:mm:ss[.s[s[s]]][((+|-)hh:mm)|Z] -->
+        <!-- for a detailed specification, see http://www.w3.org/TR/xmlschema-2/#dateTime -->
+        <!-- omit the StartTime element if free start times are used (e.g. punching start) -->
+        <StartTime>2011-07-30T10:00:00+01:00</StartTime>
+        <ControlCard>794021</ControlCard>
+      </Start>
+      <!-- one Start element per race, use the raceNumber attribute to specify the race -->
+      <Start raceNumber="2">
+        <BibNumber>1</BibNumber>
+        <StartTime>2011-07-31T10:10:00+01:00</StartTime>
+        <ControlCard>794021</ControlCard>
+      </Start>
+    </PersonStart>
+    <PersonStart>
+      <EntryId>5678</EntryId>
+      <Person>
+        <Id>2</Id>
+        <Name>
+          <Family>Martin</Family>
+          <Given>Edgar</Given>
+        </Name>
+      </Person>
+      <Organisation>
+        <Id>2</Id>
+        <Name>Bushmen OC</Name>
+        <Country code="GBR">Great Britain</Country>
+      </Organisation>
+      <Start raceNumber="1">
+        <BibNumber>102</BibNumber>
+        <StartTime>2011-07-30T10:03:00+01:00</StartTime>
+        <ControlCard>299482</ControlCard>
+      </Start>
+      <Start raceNumber="2">
+        <BibNumber>2</BibNumber>
+        <StartTime>2011-07-31T10:00:00+01:00</StartTime>
+        <ControlCard>299482</ControlCard>
+      </Start>
+    </PersonStart>
+  </ClassStart>
+</StartList>

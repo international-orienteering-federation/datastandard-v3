@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Result list for an individual event where some extended information, not included in the IOF Interface Standard specification, has been added. 
+  The prefix 'x' is used for the custom namespace http://www.example.org/my/custom/namespace, which is declared in the root element.
+-->
+<ResultList xmlns="http://www.orienteering.org/datastandard/3.0"
+            xmlns:x="http://www.example.org/my/custom/namespace"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            iofVersion="3.0" 
+            createTime="2011-07-31T22:46:33+01:00" 
+            creator="Example Software"
+            status="Complete">
+  <Event>
+    <Name>Example event</Name>
+    <StartTime>
+      <Date>2011-07-30</Date>
+      <Time>10:00:00+01:00</Time>
+    </StartTime>
+    <EndTime>
+      <Date>2011-07-30</Date>
+      <Time>14:00:00+01:00</Time>
+    </EndTime>
+  </Event>
+  <ClassResult>
+    <Class>
+      <Id>1</Id>
+      <Name>Men Elite</Name>
+    </Class>
+    <Course>
+      <Length>4650</Length>
+      <Climb>160</Climb>
+    </Course>
+    <PersonResult>
+      <Person>
+        <Id>1</Id>
+        <Name>
+          <Family>Wood</Family>
+          <Given>George</Given>
+        </Name>
+        <Extensions>
+          <!-- including an element with person information defined in a custom namespace -->
+          <x:MyCustomPersonElement attribute1="x" attribute2="y">
+            <x:MyCustomPersonSubElement>z</x:MyCustomPersonSubElement>
+          </x:MyCustomPersonElement>
+        </Extensions>
+      </Person>
+      <Organisation>
+        <Id>5</Id>
+        <Name>OC Back and Forth</Name>
+        <Country code="GBR">Great Britain</Country>
+      </Organisation>
+      <Result>
+        <BibNumber>101</BibNumber>
+        <StartTime>2011-07-30T10:00:00+01:00</StartTime>
+        <FinishTime>2011-07-30T10:33:21+01:00</FinishTime>
+        <Time>2001</Time>
+        <TimeBehind>0</TimeBehind>
+        <Position>1</Position>
+        <Status>OK</Status>
+        <Extensions>
+          <!-- including an element with result information defined in a custom namespace -->
+          <x:MyCustomResultElement myCustomAttribute="1234">5678</x:MyCustomResultElement>
+        </Extensions>
+      </Result>
+    </PersonResult>
+    <PersonResult>
+      <Person>
+        <Id>2</Id>
+        <Name>
+          <Family>Martin</Family>
+          <Given>Edgar</Given>
+        </Name>
+        <Extensions>
+          <x:MyCustomPersonElement attribute1="a">
+            <x:MyCustomPersonSubElement>b</x:MyCustomPersonSubElement>
+          </x:MyCustomPersonElement>
+        </Extensions>
+      </Person>
+      <Organisation>
+        <Id>2</Id>
+        <Name>Bushmen OC</Name>
+        <Country code="GBR">Great Britain</Country>
+      </Organisation>
+      <Result>
+        <BibNumber>102</BibNumber>
+        <StartTime>2011-07-30T10:03:00+01:00</StartTime>
+        <FinishTime>2011-07-30T10:39:42+01:00</FinishTime>
+        <Time>2202</Time>
+        <Status>MissingPunch</Status>
+        <Extensions>
+          <x:MyCustomResultElement myCustomAttribute="9012">3456</x:MyCustomResultElement>
+        </Extensions>
+      </Result>
+    </PersonResult>
+  </ClassResult>
+</ResultList>
