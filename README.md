@@ -143,4 +143,4 @@ Search for "XML schema code generation" using your favorite search engine to fin
 Code libraries to decode and encode route information are available in PHP and C# are found [here](libraries).
 
 ## Validation
-Software developers should always ensure that the XML files produced by their software conform to the interface standard. There are plenty of validation tools available for free on the Internet. Search for “XML schema validation” using your favorite search engine.
+Software developers should always ensure that the XML files produced by their software conform to the interface standard. There are plenty of validation tools available for free on the Internet. Search for “XML schema validation" using your favorite search engine.
