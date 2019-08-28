@@ -1,5 +1,7 @@
 # IOF Data Standard, version 3.0
 
+> ✔️ This is the latest version of the data standard.
+
 ## What is the IOF Interface Standard?
 
 The International Orienteering Federation (IOF) Interface Standard is a specification of an XML data format for the interchange of orienteering-related information (events, entries, start lists, result lists, etc.) between applications, web services and databases. When adopted by orienteering software packages, it will allow the packages to exchange information between each other. This will benefit event organisers and contribute to simplifying the organisation of orienteering events.
@@ -146,3 +148,9 @@ Code libraries to decode and encode route information are available in PHP and C
 
 ## Validation
 Software developers should always ensure that the XML files produced by their software conform to the interface standard. There are plenty of validation tools available for free on the Internet. Search for “XML schema validation" using your favorite search engine.
+
+
+  ## Authors:
+ * Mats Troeng, SWE
+  
+*December 2012*
