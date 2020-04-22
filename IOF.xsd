@@ -19,7 +19,7 @@
     <xsd:documentation>
       This XML schema describes the IOF interface standard exchange format for a wide selection of orienteering information. The schema supersedes the previous version 2.0.3.
 
-      Website: https://orienteering.sport/iof/resources/it/data-standard-3-0/
+      Website: https://orienteering.sport/iof/it/data-standard-3-0/
       Author:  Mats Troeng
       Date:    December 2012
 
